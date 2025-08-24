@@ -1,0 +1,384 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background: #fdfdfd;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1E90FF;
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-links a.active {
+  background: #ffdd00;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.2);
+  color: #ffdd00;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Top Mindanao Tourist Spots */
+.top-mindanao-spots {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 5%;
+}
+
+.top-mindanao-spots h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #1E90FF;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.spot {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.spot-image {
+  flex: 1;
+}
+
+.spot-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.spot-image img:hover {
+  transform: scale(1.02);
+}
+
+.spot-text {
+  flex: 2;
+}
+
+.spot-text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #1E90FF;
+  margin-bottom: 15px;
+}
+
+.spot-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #1E90FF;
+  color: #ffffff;
+  padding: 60px 5% 20px;
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+}
+
+.footer-column h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffdd00;
+}
+
+.footer-column p,
+.footer-column li a {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ffdd00;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Footer Social */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-social a:hover {
+  background: #ffdd00;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+/* Tablets */
+@media (max-width: 1024px) {
+  .top-mindanao-spots h2 {
+    font-size: 28px;
+  }
+  
+  .spot-text h3 {
+    font-size: 22px;
+  }
+  
+  .spot-text p {
+    font-size: 15px;
+  }
+}
+
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: #1E90FF;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+  }
+  
+  .nav-links.active {
+    left: 0;
+  }
+  
+  .nav-links li {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .top-mindanao-spots {
+    padding: 0 3%;
+    margin: 40px auto;
+  }
+  
+  .spot {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .spot-text {
+    text-align: center;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 18px;
+  }
+  
+  .top-mindanao-spots h2 {
+    font-size: 24px;
+  }
+  
+  .spot-text h3 {
+    font-size: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 18px;
+  }
+  
+  .footer-column h3 {
+    font-size: 16px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* Very Small Phones */
+@media (max-width: 320px) {
+  .logo span {
+    font-size: 16px;
+  }
+  
+  .top-mindanao-spots h2 {
+    font-size: 22px;
+  }
+}

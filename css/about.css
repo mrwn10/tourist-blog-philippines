@@ -1,0 +1,468 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background: #fdfdfd;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1E90FF;
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-links a.active {
+  background: #ffdd00;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.2);
+  color: #ffdd00;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* About Section */
+.about-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 5%;
+}
+
+.about-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #1E90FF;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #1E90FF;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  margin: 15px 0 20px 20px;
+}
+
+.about-text li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Skills Section */
+.skills {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.skills h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #1E90FF;
+  margin-bottom: 15px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 100px;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tech-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.tech-item:nth-child(1) i {
+  color: #e34f26; /* HTML5 color */
+}
+
+.tech-item:nth-child(2) i {
+  color: #1572b6; /* CSS3 color */
+}
+
+.tech-item:nth-child(3) i {
+  color: #f7df1e; /* JavaScript color */
+}
+
+.tech-item:nth-child(4) i {
+  color: #181717; /* GitHub color */
+}
+
+.tech-item span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background: #1E90FF;
+  color: #ffffff;
+  padding: 60px 5% 20px;
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+}
+
+.footer-column h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffdd00;
+}
+
+.footer-column p,
+.footer-column li a {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ffdd00;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Footer Social */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-social a:hover {
+  background: #ffdd00;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+/* Tablets */
+@media (max-width: 1024px) {
+  .about-section h2 {
+    font-size: 28px;
+  }
+  
+  .about-text h3 {
+    font-size: 24px;
+  }
+  
+  .about-text p {
+    font-size: 15px;
+  }
+}
+
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: #1E90FF;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+  }
+  
+  .nav-links.active {
+    left: 0;
+  }
+  
+  .nav-links li {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 0 3%;
+    margin: 40px auto;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .tech-icons {
+    justify-content: center;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 18px;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+  }
+  
+  .about-text h3 {
+    font-size: 22px;
+  }
+  
+  .tech-item {
+    min-width: 80px;
+    padding: 10px;
+  }
+  
+  .tech-item i {
+    font-size: 30px;
+  }
+  
+  .footer-logo {
+    font-size: 18px;
+  }
+  
+  .footer-column h3 {
+    font-size: 16px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* Very Small Phones */
+@media (max-width: 320px) {
+  .logo span {
+    font-size: 16px;
+  }
+  
+  .about-section h2 {
+    font-size: 22px;
+  }
+  
+  .tech-icons {
+    gap: 10px;
+  }
+  
+  .tech-item {
+    min-width: 70px;
+  }
+}
